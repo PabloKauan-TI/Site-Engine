@@ -1,0 +1,745 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Engine API",
+        "description": "API para gerenciar membros da equipe.",
+        "contact": {
+            "name": "Pablo Kauan M. Timbó",
+            "email": "pablokauan.tech@gmail.com"
+        },
+        "version": "1.0.0"
+    },
+    "servers": [
+        {
+            "url": "http://localhost:8000/api",
+            "description": "Servidor local"
+        }
+    ],
+    "paths": {
+        "/api/members": {
+            "get": {
+                "tags": [
+                    "Member"
+                ],
+                "operationId": "20e6baf76421bba133e9048dcdbe7355",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "#/components/schemas/Member"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "Member"
+                ],
+                "operationId": "8d4f28b9a8881fef3a26990bc41f14ad",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/Member"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "201": {
+                        "description": "Created",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Member"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/members/{id}": {
+            "get": {
+                "tags": [
+                    "Member"
+                ],
+                "operationId": "80f0d8d79a63de8091cbd614c69bb185",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Member"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "put": {
+                "tags": [
+                    "Member"
+                ],
+                "operationId": "d6c64df7108dddba3753fea5e8bb06b1",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/Member"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Member"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    "Member"
+                ],
+                "operationId": "1185c247067e00121f165f63906d5a03",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": "No Content"
+                    }
+                }
+            }
+        },
+        "/api/news": {
+            "get": {
+                "tags": [
+                    "News"
+                ],
+                "operationId": "9bfe744cf19dcb58e9ab9677c29ee6c7",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "#/components/schemas/News"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "News"
+                ],
+                "operationId": "1c0fdf6cc53f1508a87121ef9111be5b",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/News"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "201": {
+                        "description": "Created",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/News"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/news/{id}": {
+            "get": {
+                "tags": [
+                    "News"
+                ],
+                "operationId": "235a202c862ec6888f4129413c1f2bcd",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/News"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "put": {
+                "tags": [
+                    "News"
+                ],
+                "operationId": "11a73338ef61a1ffd2ab3771639f638e",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/News"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/News"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    "News"
+                ],
+                "operationId": "cd3235328b3ea2080e4d0a47986d4714",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": "No Content"
+                    }
+                }
+            }
+        },
+        "/api/projects": {
+            "get": {
+                "tags": [
+                    "Project"
+                ],
+                "operationId": "8d4a13ef3fc773ff4031e515460919ea",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "#/components/schemas/Project"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "Project"
+                ],
+                "operationId": "a4dd4c17bf5fc24c224357f03dcc848a",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/Project"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "201": {
+                        "description": "Created",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Project"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/projects/{id}": {
+            "get": {
+                "tags": [
+                    "Project"
+                ],
+                "operationId": "af32aed47c19d517816e0b970d60cd5a",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Project"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "put": {
+                "tags": [
+                    "Project"
+                ],
+                "operationId": "491d11cc6efd20335421a859159e2487",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/Project"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Project"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    "Project"
+                ],
+                "operationId": "187865e30ff6b72f1cea3037d9dd84fa",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": "No Content"
+                    }
+                }
+            }
+        },
+        "/api/publications": {
+            "get": {
+                "tags": [
+                    "Publication"
+                ],
+                "operationId": "155563eef0fc5315392d5159f6900c7c",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "#/components/schemas/Publication"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "Publication"
+                ],
+                "operationId": "1df157695ca57594c4895df075f87360",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/Publication"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "201": {
+                        "description": "Created",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Publication"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/publications/{id}": {
+            "get": {
+                "tags": [
+                    "Publication"
+                ],
+                "operationId": "79ebde65fcb43bfb28ce7cb8034c2465",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Publication"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "put": {
+                "tags": [
+                    "Publication"
+                ],
+                "operationId": "25a50d5e76da8405f5d6cacc3be8268c",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/Publication"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Publication"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    "Publication"
+                ],
+                "operationId": "22b8899a0d1ccd1235fd6d44817860b7",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": "No Content"
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "Member": {
+                "properties": {
+                    "id": {
+                        "type": "integer",
+                        "example": 1
+                    },
+                    "nome": {
+                        "type": "string",
+                        "example": "John Doe"
+                    },
+                    "email": {
+                        "type": "string",
+                        "example": "john.doe@example.com"
+                    },
+                    "biografia": {
+                        "type": "string",
+                        "example": "Biografia do membro"
+                    },
+                    "funcao": {
+                        "type": "string",
+                        "example": "Função do membro"
+                    },
+                    "formacao": {
+                        "type": "string",
+                        "example": "Formação do membro"
+                    },
+                    "linkedin": {
+                        "type": "string",
+                        "example": "johndoe"
+                    },
+                    "lattes": {
+                        "type": "string",
+                        "example": "1234567890"
+                    },
+                    "url_foto": {
+                        "type": "string",
+                        "example": "https://example.com/foto.jpg"
+                    }
+                },
+                "type": "object"
+            },
+            "News": {
+                "properties": {
+                    "id": {
+                        "type": "integer",
+                        "example": 1
+                    },
+                    "titulo": {
+                        "type": "string",
+                        "example": "Lançamento do projeto"
+                    },
+                    "tipo": {
+                        "type": "string",
+                        "example": "Evento"
+                    },
+                    "subtitulo": {
+                        "type": "string",
+                        "example": "Subtítulo breve"
+                    },
+                    "data": {
+                        "type": "string",
+                        "format": "date",
+                        "example": "2026-08-11"
+                    },
+                    "corpo": {
+                        "type": "string",
+                        "example": "Corpo da notícia"
+                    }
+                },
+                "type": "object"
+            },
+            "Project": {
+                "properties": {
+                    "id": {
+                        "type": "integer",
+                        "example": 1
+                    },
+                    "titulo": {
+                        "type": "string",
+                        "example": "Projeto X"
+                    },
+                    "areas": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "subtitulo": {
+                        "type": "string",
+                        "example": "Breve subtítulo"
+                    },
+                    "descricao": {
+                        "type": "string",
+                        "example": "Descrição do projeto"
+                    },
+                    "objetivos": {
+                        "type": "string",
+                        "example": "Objetivos do projeto"
+                    },
+                    "tecnologias": {
+                        "type": "string",
+                        "example": "PHP, Laravel"
+                    },
+                    "ano_inicio": {
+                        "type": "integer",
+                        "example": 2023
+                    },
+                    "ano_fim": {
+                        "type": "integer",
+                        "example": 2024
+                    },
+                    "financiamento": {
+                        "type": "string",
+                        "example": "FAPESP"
+                    }
+                },
+                "type": "object"
+            },
+            "Publication": {
+                "properties": {
+                    "id": {
+                        "type": "integer",
+                        "example": 1
+                    },
+                    "titulo": {
+                        "type": "string",
+                        "example": "Título do artigo"
+                    },
+                    "tipo": {
+                        "type": "string",
+                        "example": "Journal"
+                    },
+                    "autores": {
+                        "type": "string",
+                        "example": "Silva, A.; Costa, R."
+                    },
+                    "onde_publicado": {
+                        "type": "string",
+                        "example": "Revista X"
+                    },
+                    "ano": {
+                        "type": "integer",
+                        "example": 2024
+                    },
+                    "doi": {
+                        "type": "string",
+                        "example": "10.1234/abcd.2024"
+                    }
+                },
+                "type": "object"
+            }
+        }
+    },
+    "tags": [
+        {
+            "name": "Member",
+            "description": "Member"
+        },
+        {
+            "name": "News",
+            "description": "News"
+        },
+        {
+            "name": "Project",
+            "description": "Project"
+        },
+        {
+            "name": "Publication",
+            "description": "Publication"
+        }
+    ]
+}
