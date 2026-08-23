@@ -1,0 +1,49 @@
+﻿{
+    "value":  [
+                  {
+                      "id":  1,
+                      "titulo":  "EngineLab recebe prêmio de melhor artigo no IEEE IoT Journal",
+                      "image_url":  null,
+                      "tipo":  "Prêmio",
+                      "subtitulo":  "Nosso trabalho sobre agendamento eficiente em aprendizado federado foi reconhecido como destaque de 2025.",
+                      "data":  "2026-07-12T00:00:00.000000Z",
+                      "corpo":  "O EngineLab teve seu artigo \u0027Energy-aware task scheduling for federated learning on IoT edge devices\u0027 reconhecido como um dos destaques do IEEE Internet of Things Journal em 2025.\n\nO trabalho, liderado pela Dra. Ana Silva em colaboração com o Dr. Rafael Costa e a Dra. Joana Menezes, propõe uma abordagem inédita para balancear consumo energético e desempenho de modelos em dispositivos de borda.\n\nA premiação será entregue durante a próxima edição do IEEE World Forum on Internet of Things.",
+                      "created_at":  "2026-08-22T23:40:14.000000Z",
+                      "updated_at":  "2026-08-23T22:58:34.000000Z"
+                  },
+                  {
+                      "id":  2,
+                      "titulo":  "Nova parceria com indústria automotiva para pesquisa em digital twins",
+                      "image_url":  null,
+                      "tipo":  "Parceria",
+                      "subtitulo":  "Iniciamos uma cooperação de três anos para pesquisa aplicada em manutenção preditiva de linhas de produção.",
+                      "data":  "2026-06-28T00:00:00.000000Z",
+                      "corpo":  "O EngineLab firmou uma cooperação técnica de três anos com uma das maiores montadoras do país para desenvolver digital twins de linhas de produção.\n\nO projeto EdgeTwin será o principal beneficiário da parceria, com aporte financeiro e acesso a dados reais de operação industrial.\n\nA cooperação prevê ainda a formação de mestres e doutores em conjunto entre universidade e indústria.",
+                      "created_at":  "2026-08-22T23:40:14.000000Z",
+                      "updated_at":  "2026-08-22T23:40:14.000000Z"
+                  },
+                  {
+                      "id":  3,
+                      "titulo":  "EngineLab sedia workshop internacional de Edge AI",
+                      "image_url":  null,
+                      "tipo":  "Evento",
+                      "subtitulo":  "Pesquisadores de oito países se reuniram para discutir tendências em inteligência artificial na borda.",
+                      "data":  "2026-06-05T00:00:00.000000Z",
+                      "corpo":  "Nos dias 3 e 4 de junho, o EngineLab recebeu o Workshop Internacional de Edge AI, com participação de pesquisadores de oito países.\n\nO evento contou com palestras, painéis e sessões de posters, além de demonstrações práticas de projetos em andamento no laboratório.\n\nOs anais do workshop serão publicados em edição especial de periódico internacional.",
+                      "created_at":  "2026-08-22T23:40:14.000000Z",
+                      "updated_at":  "2026-08-22T23:40:14.000000Z"
+                  },
+                  {
+                      "id":  4,
+                      "titulo":  "Framework SecureMesh publicado como código aberto",
+                      "image_url":  null,
+                      "tipo":  "Publicação",
+                      "subtitulo":  "O protocolo de comunicação segura para IoT está agora disponível para a comunidade acadêmica.",
+                      "data":  "2026-05-20T00:00:00.000000Z",
+                      "corpo":  "A implementação de referência do protocolo SecureMesh foi liberada como código aberto sob licença Apache 2.0.\n\nO repositório inclui exemplos completos para plataformas embarcadas populares, além de suítes de teste e análise de segurança.\n\nA equipe convida a comunidade acadêmica a colaborar com auditorias, extensões e novas provas de conceito.",
+                      "created_at":  "2026-08-22T23:40:14.000000Z",
+                      "updated_at":  "2026-08-22T23:40:14.000000Z"
+                  }
+              ],
+    "Count":  4
+}

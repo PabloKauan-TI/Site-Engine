@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Swagger UI - Engine API</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/4.20.2/swagger-ui.css" integrity="sha512-CwNlARS3V1kRATXnqgTib0DwVEkMXfS7a5k9xui/4jZn9p4dFsqhEO2TSM3B1mCduhPvnkY5MbRdzsUbKx3H6Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    html {
+      box-sizing: border-box;
+      overflow: -moz-scrollbars-vertical;
+      overflow-y: scroll;
+    }
+    *, *:before, *:after {
+      box-sizing: inherit;
+    }
+    body {
+      margin:0;
+      background: #fafafa;
+    }
+  </style>
+</head>
+<body>
+  <div id="swagger-ui"></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/4.20.2/swagger-ui-bundle.min.js" integrity="sha512-ZAzsUJw6cZ0P8dpvykf4N1QDa+3iw7W3yXYvQJEQZqgTdZ6X7CZKvC2iP+xW0IMUZ4jEBuTgyp8RGxm6M4VylQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/4.20.2/swagger-ui-standalone-preset.min.js" integrity="sha512-nGV+fCvKX0H2jId1wZEjZlUZzKXfFfv4N5QQl6IFfrbeqbaI+3i9amxMnQRtqDm0kNyL7lZ9xDdBGMYdFlbgig==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    window.onload = function() {
+      SwaggerUIBundle({
+        url: '/api-docs/openapi.json',
+        dom_id: '#swagger-ui',
+        deepLinking: true,
+        presets: [
+          SwaggerUIBundle.presets.apis,
+          SwaggerUIStandalonePreset
+        ],
+        layout: 'StandaloneLayout'
+      });
+    };
+  </script>
+</body>
+</html>
